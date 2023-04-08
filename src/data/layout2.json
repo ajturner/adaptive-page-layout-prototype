@@ -1,0 +1,89 @@
+{
+    "rows": [
+      {
+        "style": {},
+        "sections": [
+          {
+            "style": { "flex": 1 },
+            "cards": [
+              {
+                "type": "TextBlock",
+                "text": "Welcome to Our Website",
+                "size": "extraLarge",
+                "style": { "marginBottom": "16px" }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "style": {},
+        "sections": [
+          {
+            "style": { "flex": 1 },
+            "cards": [
+              {
+                "type": "TextBlock",
+                "text": "Latest News",
+                "size": "large",
+                "style": { "marginBottom": "16px" }
+              },
+              {
+                "type": "TextBlock",
+                "text": "News item 1",
+                "style": { "marginBottom": "8px" }
+              },
+              {
+                "type": "TextBlock",
+                "text": "News item 2",
+                "style": { "marginBottom": "8px" }
+              }
+            ]
+          },
+          {
+            "style": { "flex": 1 },
+            "cards": [
+              {
+                "type": "TextBlock",
+                "text": "Upcoming Events",
+                "size": "large",
+                "style": { "marginBottom": "16px" }
+              },
+              {
+                "type": "TextBlock",
+                "text": "Event 1",
+                "style": { "marginBottom": "8px" }
+              },
+              {
+                "type": "TextBlock",
+                "text": "Event 2",
+                "style": { "marginBottom": "8px" }
+              }
+            ]
+          },
+          {
+            "style": { "flex": 1 },
+            "cards": [
+              {
+                "type": "TextBlock",
+                "text": "Contact Us",
+                "size": "large",
+                "style": { "marginBottom": "16px" }
+              },
+              {
+                "type": "TextBlock",
+                "text": "Phone: (555) 123-4567",
+                "style": { "marginBottom": "8px" }
+              },
+              {
+                "type": "TextBlock",
+                "text": "Email: info@example.com",
+                "style": { "marginBottom": "8px" }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

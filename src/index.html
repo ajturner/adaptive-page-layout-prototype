@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-  <title>REPLACE_PROJECT_NAME</title>
+  <title>adaptive-hub-layout</title>
 
-  <script type="module" src="./build/REPLACE_PROJECT_NAME.esm.js"></script>
-  <script nomodule src="./build/REPLACE_PROJECT_NAME.js"></script>
+  <script type="module" src="./build/adaptive-hub-layout.esm.js"></script>
+  <script nomodule src="./build/adaptive-hub-layout.js"></script>
 
   <link
     rel="stylesheet"
     type="text/css"
-    href="https://js.arcgis.com/calcite-components/1.0.7/calcite.css"
+    href="https://js.arcgis.com/calcite-components/1.2.0/calcite.css"
   />
 </head>
 
@@ -30,15 +30,16 @@
 
   <script>
     // Dynamically add the component so we can set URL or object properties
-    const componentName = "prototype";
+    const componentName = "hub-layout";
 
     const placeholderEl = document.getElementById("placeholder");
     const componentEl = document.createElement( componentName );
 
     const urlParams = new URL(window.location).searchParams;
     // Change for specific component properties
-    // componentEl.query = urlParams.get('query');
+    componentEl.configUrl = urlParams.get('layout') || "./data/layout1.json";
     // componentEl.innerHTML = "Slot text";
+    // componentEl.configUrl = "./data/layout1.json"
     
     placeholderEl.appendChild(componentEl);
   </script>

@@ -6,19 +6,79 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface HubLayout {
+        "configUrl": string;
+    }
+    interface HubLayoutCard {
+        "config": any;
+    }
+    interface HubLayoutRow {
+        "config": any;
+    }
+    interface HubLayoutSection {
+        "config": any;
+    }
 }
 declare global {
+    interface HTMLHubLayoutElement extends Components.HubLayout, HTMLStencilElement {
+    }
+    var HTMLHubLayoutElement: {
+        prototype: HTMLHubLayoutElement;
+        new (): HTMLHubLayoutElement;
+    };
+    interface HTMLHubLayoutCardElement extends Components.HubLayoutCard, HTMLStencilElement {
+    }
+    var HTMLHubLayoutCardElement: {
+        prototype: HTMLHubLayoutCardElement;
+        new (): HTMLHubLayoutCardElement;
+    };
+    interface HTMLHubLayoutRowElement extends Components.HubLayoutRow, HTMLStencilElement {
+    }
+    var HTMLHubLayoutRowElement: {
+        prototype: HTMLHubLayoutRowElement;
+        new (): HTMLHubLayoutRowElement;
+    };
+    interface HTMLHubLayoutSectionElement extends Components.HubLayoutSection, HTMLStencilElement {
+    }
+    var HTMLHubLayoutSectionElement: {
+        prototype: HTMLHubLayoutSectionElement;
+        new (): HTMLHubLayoutSectionElement;
+    };
     interface HTMLElementTagNameMap {
+        "hub-layout": HTMLHubLayoutElement;
+        "hub-layout-card": HTMLHubLayoutCardElement;
+        "hub-layout-row": HTMLHubLayoutRowElement;
+        "hub-layout-section": HTMLHubLayoutSectionElement;
     }
 }
 declare namespace LocalJSX {
+    interface HubLayout {
+        "configUrl"?: string;
+    }
+    interface HubLayoutCard {
+        "config"?: any;
+    }
+    interface HubLayoutRow {
+        "config"?: any;
+    }
+    interface HubLayoutSection {
+        "config"?: any;
+    }
     interface IntrinsicElements {
+        "hub-layout": HubLayout;
+        "hub-layout-card": HubLayoutCard;
+        "hub-layout-row": HubLayoutRow;
+        "hub-layout-section": HubLayoutSection;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "hub-layout": LocalJSX.HubLayout & JSXBase.HTMLAttributes<HTMLHubLayoutElement>;
+            "hub-layout-card": LocalJSX.HubLayoutCard & JSXBase.HTMLAttributes<HTMLHubLayoutCardElement>;
+            "hub-layout-row": LocalJSX.HubLayoutRow & JSXBase.HTMLAttributes<HTMLHubLayoutRowElement>;
+            "hub-layout-section": LocalJSX.HubLayoutSection & JSXBase.HTMLAttributes<HTMLHubLayoutSectionElement>;
         }
     }
 }
